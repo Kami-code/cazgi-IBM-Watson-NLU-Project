@@ -36,7 +36,7 @@ class App extends React.Component {
   sendForSentimentAnalysis = () => {
     this.setState({sentiment:true});
     let ret = "";
-    let url = ".";
+    let url = "http://localhost:8080";
 
     if(this.state.mode === "url") {
       url = url+"/url/sentiment?url="+document.getElementById("textinput").value;
@@ -50,6 +50,11 @@ class App extends React.Component {
 
       this.setState({sentimentOutput:response.data});
       let output = response.data;
+      if (output == 'err') {
+        output = <div style={{color:"red",fontSize:20}}>An error occurred! Please change the text and try again!</div>
+        this.setState({sentimentOutput:output});
+        return;
+      }
       if(response.data === "positive") {
         output = <div style={{color:"green",fontSize:20}}>{response.data}</div>
       } else if (response.data === "negative"){
@@ -64,7 +69,7 @@ class App extends React.Component {
   sendForEmotionAnalysis = () => {
     this.setState({sentiment:false});
     let ret = "";
-    let url = ".";
+    let url = "http://localhost:8080";
     if(this.state.mode === "url") {
       url = url+"/url/emotion?url="+document.getElementById("textinput").value;
     } else {

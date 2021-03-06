@@ -2,21 +2,33 @@ import React from 'react';
 import './bootstrap.min.css';
 
 class EmotionTable extends React.Component {
+
+
     render() {
-      return (  
+        if (this.props.emotions === 'err') {
+           return (
+               <div style={{color:"red",fontSize:20}}>An error occurred! Please change the text and try again!</div>
+           );
+        }
+        let emotion = [];
+        for(let key in this.props.emotions){
+            emotion.push({'key':key , 'value': this.props.emotions[key]});
+        }
+        return (
         <div>
-          {/*You can remove this line and the line below. */}
-          {JSON.stringify(this.props.emotions)}
           <table className="table table-bordered">
             <tbody>
             {
-                //Write code to use the .map method that you worked on in the Hands-on React lab to extract the emotions
+                emotion.map(function(emotion_local, index){
+                    return (
+                        <tr><td>{emotion_local.key}</td><td>{emotion_local.value}</td></tr>
+                    )
+                })
             }
             </tbody>
           </table>
           </div>
           );
         }
-    
 }
 export default EmotionTable;
