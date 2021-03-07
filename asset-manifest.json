@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/cazgi-IBM-Watson-NLU-Project/static/css/main.1b8a33eb.chunk.css",
+    "main.js": "/cazgi-IBM-Watson-NLU-Project/static/js/main.821913df.chunk.js",
+    "main.js.map": "/cazgi-IBM-Watson-NLU-Project/static/js/main.821913df.chunk.js.map",
+    "runtime-main.js": "/cazgi-IBM-Watson-NLU-Project/static/js/runtime-main.a031d551.js",
+    "runtime-main.js.map": "/cazgi-IBM-Watson-NLU-Project/static/js/runtime-main.a031d551.js.map",
+    "static/js/2.b6650d2f.chunk.js": "/cazgi-IBM-Watson-NLU-Project/static/js/2.b6650d2f.chunk.js",
+    "static/js/2.b6650d2f.chunk.js.map": "/cazgi-IBM-Watson-NLU-Project/static/js/2.b6650d2f.chunk.js.map",
+    "static/js/3.c2b51bb0.chunk.js": "/cazgi-IBM-Watson-NLU-Project/static/js/3.c2b51bb0.chunk.js",
+    "static/js/3.c2b51bb0.chunk.js.map": "/cazgi-IBM-Watson-NLU-Project/static/js/3.c2b51bb0.chunk.js.map",
+    "index.html": "/cazgi-IBM-Watson-NLU-Project/index.html",
+    "static/css/main.1b8a33eb.chunk.css.map": "/cazgi-IBM-Watson-NLU-Project/static/css/main.1b8a33eb.chunk.css.map",
+    "static/js/2.b6650d2f.chunk.js.LICENSE.txt": "/cazgi-IBM-Watson-NLU-Project/static/js/2.b6650d2f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a031d551.js",
+    "static/js/2.b6650d2f.chunk.js",
+    "static/css/main.1b8a33eb.chunk.css",
+    "static/js/main.821913df.chunk.js"
+  ]
+}
